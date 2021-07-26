@@ -6,4 +6,4 @@
 |#|Challenge|PR Link|
 |----|-----|-------|
 |1|array-reverse|[array reverse](python/code_challenges/array-reverse/README.md)|
-|2|array shift|[array shift]()|
+|2|array shift|[array shift](python/code_challenges/array-insert-shift.py/README.md)|
