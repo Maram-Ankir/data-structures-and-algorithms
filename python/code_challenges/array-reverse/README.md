@@ -1,4 +1,3 @@
-
 # Reverse an Array
 
 ## function that takes array and returns the array elements in reversed order
