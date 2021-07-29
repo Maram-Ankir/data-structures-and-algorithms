@@ -6,7 +6,7 @@
 
 ### The Whiteboard Process
 
-![CodeChallenge 3](Binary-Search.jpg)
+![CodeChallenge 3](BS.jpg)
 
 ### Approach & Efficiency
 
