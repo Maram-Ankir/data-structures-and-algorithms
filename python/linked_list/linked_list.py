@@ -61,23 +61,42 @@ class LinkedList:
             current.next=Node(value)
             return current.next
 
-def insert(self, old_data, new_data):
 
-    if self.head is None:
-        return
+def insert_before(self,val,new_val):
+            if self.head ==None:
+                self.head=Node(val)
+            if self.head.value == val:
+                self.insert(new_val)
+            else:
+                try:
+                    current=self.head
+                    while current.next:
+                        if  current.next.value== val:
+                            saved_current_val=current.next
+                            current.next=Node(new_val)
+                            current.next.next=saved_current_val
+                            return current.next
+                        current=current.next
+                except:
+                    print(f'{val} is not in linked list')
 
-    if self.head.data == old_data:
-        self.head.next = Node(new_data, self.head.next)
-        return
 
-    temp = self.head
-
-    while temp:
-        if temp.data == old_data:
-            temp.next = Node(new_data, temp.next)
-            break
-
-    temp = temp.next
+def insert_after(self,val,new_val):
+        try:
+            current=self.head
+            if self.head ==None:
+                self.head=Node(val)
+                return self.head
+            else:
+                while current:
+                    if  current.value== val:
+                        saved_current_val=current.next
+                        current.next=Node(new_val)
+                        current.next.next=saved_current_val
+                        return current.next
+                    current=current.next
+        except:
+            print('Error')
 
 
 ll1=LinkedList()
