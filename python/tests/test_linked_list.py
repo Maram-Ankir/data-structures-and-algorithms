@@ -21,7 +21,7 @@ def test_append_one():
     expected='2-> NULL'
     assert actual==expected
 
-def test_insert_before_node_middle_of_linked_list():
+def test_insert_before_middle_of_linked_list():
     l=LinkedList()
     l.append(8)
     l.append(3)
