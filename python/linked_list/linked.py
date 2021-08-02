@@ -20,7 +20,6 @@ class LinkedList():
 
   def includes(self,vlaue):
      current=self.head
-
      while current :
          print(current.value)
          if vlaue ==current.value:
