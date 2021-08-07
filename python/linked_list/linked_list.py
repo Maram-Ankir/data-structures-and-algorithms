@@ -1,16 +1,3 @@
-# class LinkedList:
-#     """
-#     Put docstring here
-#     """
-
-#     def __init__(self):
-#         # initialization here
-#         pass
-
-#     def some_method(self):
-#         # method body here
-#         pass
-
 
 class Node:
     def __init__(self, value):
@@ -61,7 +48,7 @@ class LinkedList:
             current.next=Node(value)
             return current.next
 
-def insert_before(self,val,new_val):
+    def insert_before(self,val,new_val):
             if self.head ==None:
                 self.head=Node(val)
             if self.head.value == val:
@@ -77,10 +64,10 @@ def insert_before(self,val,new_val):
                             return current.next
                         current=current.next
                 except:
-                    print(f'{val} is not in linked list')
+                    raise Exception (f'{val} is not in linked list')
 
 
-def insert_after(self,val,new_val):
+    def insert_after(self,val,new_val):
         try:
             current=self.head
             if self.head ==None:
@@ -95,13 +82,13 @@ def insert_after(self,val,new_val):
                         return current.next
                     current=current.next
         except:
-            print('Error')
+            raise Exception ('Error')
 
 
-ll1=LinkedList()
-ll1.append(5)
-ll1.append(6)
-# ll1.insert(6,8)
+# ll1=LinkedList()
+# ll1.append(5)
+# ll1.append(7)
+# ll1.insert_after(5,6)
 
-print(ll1)
+# print(ll1)
 

@@ -1,8 +1,8 @@
 from linked_list.linked_list import LinkedList
 
 
-# def test_import():
-#     assert LinkedList
+def test_import():
+    assert LinkedList
 
 
 def test_append_multiple():
@@ -57,7 +57,7 @@ def test_insert_after_last_node():
     l=LinkedList()
     l.append(8)
     l.append(3)
-    l.insert_after(8,'a')
-    excepted='{8} -> {a} -> {3} -> NULL'
+    l.insert_after(8,5)
+    excepted='{8} -> {5} -> {3} -> NULL'
     actual=l.__str__()
     assert excepted==actual
