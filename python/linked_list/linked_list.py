@@ -1,15 +1,15 @@
-class LinkedList:
-    """
-    Put docstring here
-    """
+# class LinkedList:
+#     """
+#     Put docstring here
+#     """
 
-    def __init__(self):
-        # initialization here
-        pass
+#     def __init__(self):
+#         # initialization here
+#         pass
 
-    def some_method(self):
-        # method body here
-        pass
+#     def some_method(self):
+#         # method body here
+#         pass
 
 
 class Node:
