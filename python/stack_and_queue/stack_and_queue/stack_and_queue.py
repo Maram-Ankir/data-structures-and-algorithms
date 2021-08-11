@@ -78,5 +78,7 @@ class Queue():
             return 'Empty Queue'
 
 
-
+q=Queue()
+q.enqueue(4)
+print(q)
 
