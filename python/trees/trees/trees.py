@@ -14,7 +14,7 @@ class Binary_Tree:
     def pre_order():
         """root >> left >> right """
         stack=[]
-#             stack.push(root)
+        stack.push(root)
 
 #     while not stack.is_empty()
 
