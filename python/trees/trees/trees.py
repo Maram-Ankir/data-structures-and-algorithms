@@ -1,9 +1,9 @@
+
 class Node:
-    def __init__(self,value):
+    def __init__(self,value) :
         self.value=value
         self.left=None
         self.right=None
-
 
 class Binary_Tree:
     def __init__(self):
@@ -62,8 +62,6 @@ class Binary_Tree:
                 self.values+=[node.value]
                 return self.values
             return tree(self.root)
-
-
 
 
 
