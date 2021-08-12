@@ -11,7 +11,8 @@
 |4|Linked List|[linked list](python/linked_list/challenge5.md)|
 |5|LinkedList-llZip|[linked list](python/llZip/Readme.md)|
 |6|Stack and Queue|[Stack&Queue](python/stack_and_queue/README.md)|
-|6|PseudoQueue|[PseudoQueue](python/stack_and_queue/challenge11.md)|
+|7|PseudoQueue|[PseudoQueue](python/stack_and_queue/challenge11.md)|
+|8|Stack and queue brackets|[brackets](python/stack_and_queue/stack_queue_brackets/Readme13.md)|
 
 
 
