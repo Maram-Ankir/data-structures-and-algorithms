@@ -1,5 +1,3 @@
-from typing import List
-
 
 class Node:
     def __init__(self,value) :
@@ -9,34 +7,61 @@ class Node:
 
 class Binary_Tree:
     def __init__(self):
-        self.root=None
+        self.root = None
 
-    def pre_order():
-        """root >> left >> right """
-        stack=[]
-        stack.push(root)
+    def pre_order(self):
+            self.values=[]
 
-#     while not stack.is_empty()
+            if self.root == None:
+                return "Tree is Empty"
 
-#       root = stack.pop()
-#       OUTPUT <-- root.value
+            def tree(node):
+               self.values+=[node.value]
+               if node.left:
+                    tree(node.left)
+               if node.right:
+                    tree(node.right)
+               return self.values
 
-#       if root.right is not NULL
-#           stack.push(root.right)
-
-#       if root.left is not Null
-#           stack.push(root.left)
+            return tree(self.root)
 
 
+    def in_order(self):
+        """ left-node-right"""
+        try:
 
-#   preOrder(tree.root)
-#   print("Hello")
-    # def in_order():
-    #     """left >> root >> right"""
+            self.values=[]
 
-    #     pass
+            if not self.root:
+                return "Tree is Empty"
+            def tree(node):
+                if node.left:
+                    tree(node.left)
+                self.values+=[node.value]
+                if node.right:
+                    tree(node.right)
+                return self.values
 
-    # def post_order():
-    #     """left >> right >> root"""
+            return tree(self.root)
+        except:
+            return "Error"
 
-    #     pass
+
+
+    def post_order(self):
+            self.values=[]
+
+            if not self.root:
+                return "Tree is Empty"
+
+            def tree(node):
+                if node.left:
+                    tree(node.left)
+                if node.right:
+                    tree(node.right)
+                self.values+=[node.value]
+                return self.values
+            return tree(self.root)
+
+
+
