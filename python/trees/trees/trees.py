@@ -1,3 +1,5 @@
+from typing import List
+
 
 class Node:
     def __init__(self,value) :
@@ -7,61 +9,34 @@ class Node:
 
 class Binary_Tree:
     def __init__(self):
-        self.root = None
+        self.root=None
 
-    def pre_order(self):
-            self.values=[]
+    def pre_order():
+        """root >> left >> right """
+        stack=[]
+        stack.push(root)
 
-            if self.root == None:
-                return "Tree is Empty"
+#     while not stack.is_empty()
 
-            def tree(node):
-               self.values+=[node.value]
-               if node.left:
-                    tree(node.left)
-               if node.right:
-                    tree(node.right)
-               return self.values
+#       root = stack.pop()
+#       OUTPUT <-- root.value
 
-            return tree(self.root)
+#       if root.right is not NULL
+#           stack.push(root.right)
 
-
-    def in_order(self):
-        """ left-node-right"""
-        try:
-
-            self.values=[]
-
-            if not self.root:
-                return "Tree is Empty"
-            def tree(node):
-                if node.left:
-                    tree(node.left)
-                self.values+=[node.value]
-                if node.right:
-                    tree(node.right)
-                return self.values
-
-            return tree(self.root)
-        except:
-            return "Error"
+#       if root.left is not Null
+#           stack.push(root.left)
 
 
 
-    def post_order(self):
-            self.values=[]
+#   preOrder(tree.root)
+#   print("Hello")
+    # def in_order():
+    #     """left >> root >> right"""
 
-            if not self.root:
-                return "Tree is Empty"
+    #     pass
 
-            def tree(node):
-                if node.left:
-                    tree(node.left)
-                if node.right:
-                    tree(node.right)
-                self.values+=[node.value]
-                return self.values
-            return tree(self.root)
+    # def post_order():
+    #     """left >> right >> root"""
 
-
-
+    #     pass
