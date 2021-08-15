@@ -61,6 +61,22 @@ class Binary_Tree:
                 return self.values
             return tree(self.root)
 
+    def max(self):
+        if not self.root:
+         return "Tree is Empty"
+
+        self.max=self.root.value
+        def tree(node):
+            if node.value>self.max:
+                self.max=node.value
+            if node.left:
+                tree(node.left)
+            if node.right:
+                tree(node.right)
+            return self.max
+
+        return tree(self.root)
+
 
 class Binary_Search_Tree(Binary_Tree):
 
@@ -99,3 +115,6 @@ class Binary_Search_Tree(Binary_Tree):
                     if current.right == None:
                         return False
                     current = current.right
+
+
+

@@ -60,3 +60,16 @@ def test_collection_from_postorder_traversal():
     actual=b_tree.post_order()
     expected=[3,8,5]
     assert actual==expected
+
+
+def test_max_val():
+    b=Binary_Search_Tree()
+    b.root=Node(2)
+    b.root.left=Node(7)
+    b.root.left.left=Node(2)
+    b.root.left.right=Node(6)
+    b.root.left.right.left=Node(5)
+    b.root.left.right.left=Node(11)
+    b.root.right=Node(5)
+    b.root.right.right=Node(9)
+    b.root.right.right.left=Node(4)
