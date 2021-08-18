@@ -1,5 +1,40 @@
-from stack_and_queue.stack_and_queue import  Stack
+class Node:
+  def __init__(self,value):
+    self.value= value
+    self.next= None
 
+class Stack():
+    def __init__(self):
+      self.top=None
+
+    def push(self,value):
+      node=Node(value)
+      node.next =self.top
+      self.top = node
+
+    def pop(self):
+        try:
+            if self.top ==None:
+               raise Exception
+            temp=self.top
+            self.top=self.top.next
+            return temp.value
+
+        except Exception:
+            return 'Empty Stack'
+
+    def is_empty(self):
+     return not self.top
+
+
+    def peek(self):
+        try:
+            if self.top ==None:
+               raise Exception
+            return self.top.value
+
+        except Exception:
+            return 'error'
 
 class PseudoQueue:
     def __init__(self):
