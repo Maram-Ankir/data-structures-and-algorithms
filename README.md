@@ -14,7 +14,7 @@
 |6|PseudoQueue|[PseudoQueue](python/stack_and_queue/challenge11.md)|
 |7|Stack and queue shelter|[shelter](python/stack_and_queue/stack_queue_animal_shelter/challenge12.md)|
 |8|Stack and queue brackets|[brackets](python/stack_and_queue/stack_queue_brackets/Readme13.md)|
-
+|9|Binary Tree and BST|[binary tree](python/trees/challenge15.md)|
 
 
 
