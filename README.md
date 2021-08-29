@@ -16,6 +16,10 @@
 |8|Stack and queue brackets|[brackets](python/stack_and_queue/stack_queue_brackets/Readme13.md)|
 |9|Binary Tree and BST|[binary tree](python/trees/challenge15.md)|
 |10|Max of BST|[Max tree](python/trees/trees/challenge16.md)|
+|26|insertion sort|[insertion_sort](python/code_challenges/insertion_sort/README.md)|
+
+
+
 
 
 
