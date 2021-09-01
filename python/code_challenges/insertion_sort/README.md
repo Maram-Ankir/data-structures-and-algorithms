@@ -3,7 +3,7 @@ function that sort an array in ascending order
 
 ## Whiteboard Process
 
-![insertion sort](inseartion_order.jpg)
+![insertion sort](inseartion_sort.jpg)
 
 ## Approach & Efficiency
 

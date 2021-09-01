@@ -17,6 +17,8 @@
 |9|Binary Tree and BST|[binary tree](python/trees/challenge15.md)|
 |10|Max of BST|[Max tree](python/trees/trees/challenge16.md)|
 |26|insertion sort|[insertion_sort](python/code_challenges/insertion_sort/README.md)|
+|27|merge sort|[merge_sort](python/code_challenges/merge_sort/README.md)|
+|28|quick sort|[quick_sort](python/code_challenges/quick_sort/README.md)|
 
 
 

@@ -4,11 +4,11 @@ Write a function that sort an array ascendingly using quick sort.
 
 ## Whiteboard Process
 
-![quick sort](ch28.jpg)
+![quick sort](28ch.jpg)
 
 ## Approach & Efficiency
 
-time O(n2)
+time O(log(n))
 space O(1)
 
 ## Solution
