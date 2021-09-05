@@ -61,11 +61,7 @@ if __name__ == "__main__":
   hash.add('1','maram')
   hash.add('2', 'ali')
   hash.add('3', 'ankir')
-#   print(hash.find('3'))
   print(hash.repeated_word("Once upon a time "))
 
-#   print(hash.repeated_word("Once upon a time a"))
+  print(hash.repeated_word("Once upon a time a"))
 
-
-#   print(hash.contains('22'))
-#   print(hash.contains('30'))
