@@ -42,3 +42,30 @@ class Hashmap:
                     return True
                 else:
                  return False
+
+    def repeated_word(self,str):
+        str_list=str.split()
+        hash_map=Hashmap()
+        for i in str_list:
+            if hash_map.contains(i):
+                return f'{i}'
+            else:
+                hash_map.add(i,i)
+        return 'No duplicates'
+
+
+
+if __name__ == "__main__":
+  hash=Hashmap()
+
+  hash.add('1','maram')
+  hash.add('2', 'ali')
+  hash.add('3', 'ankir')
+#   print(hash.find('3'))
+  print(hash.repeated_word("Once upon a time "))
+
+#   print(hash.repeated_word("Once upon a time a"))
+
+
+#   print(hash.contains('22'))
+#   print(hash.contains('30'))
