@@ -62,6 +62,5 @@ if __name__ == "__main__":
   hash.add('2', 'ali')
   hash.add('3', 'ankir')
   print(hash.repeated_word("Once upon a time "))
-
   print(hash.repeated_word("Once upon a time a"))
 
