@@ -43,16 +43,37 @@ class Hashmap:
                 else:
                  return False
 
-    def repeated_word(self,str):
+    def most_common(self,str):
+        str=str.replace(',','')
+        str=str.replace('.','')
+        str=str.replace('','')
         str_list=str.split()
         hash_map=Hashmap()
-        for i in str_list:
+        if str =='' or str ==' ':
+          return 'string is empty'
+        for i in str_list.lower():
             if hash_map.contains(i):
                 return f'{i}'
             else:
                 hash_map.add(i,i)
         return 'No duplicates'
 
+
+    def unique_characters(self,str_val):
+        str_list=list(str_val)
+        res = []
+        for ele in str_list:
+            if ele.strip():
+                res.append(ele)
+        hash_map=Hashmap()
+        if res =='' or res ==' ':
+          return 'this string is empty'
+        for i in res:
+            if hash_map.contains(i):
+                return False
+            else:
+                hash_map.add(i,i)
+        return  True
 
 
 if __name__ == "__main__":
@@ -62,9 +83,12 @@ if __name__ == "__main__":
   hash.add('2', 'ali')
   hash.add('3', 'ankir')
 #   print(hash.find('3'))
-  print(hash.repeated_word("Once upon a time "))
+#   print(hash.repeated_word("Taco cat ate a taco"))
+  print(hash.unique_characters("The quick brown fox jumps over the lazy dog"))
+
 
 #   print(hash.repeated_word("Once upon a time a"))
+
 
 
 #   print(hash.contains('22'))
