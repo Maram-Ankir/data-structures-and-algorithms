@@ -3,6 +3,7 @@
 create a function that takes 2 binary trees and return the values that exisists in both of them
 
 # Whiteboard Process
+![tree_intersection](tree_intersection.jpg)
 
 # Approach & Efficiency
 
