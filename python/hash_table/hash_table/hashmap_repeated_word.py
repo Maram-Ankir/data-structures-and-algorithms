@@ -57,14 +57,18 @@ def repeated_word(str):
          hash_map.add(i,i)
     return 'No duplicates'
 
-
+ 
 
 if __name__ == "__main__":
   hash=Hashmap()
 
   hash.add('1','maram')
+  hash=Hashmap()
+
+  hash.add('1','maram')
   hash.add('2', 'ali')
   hash.add('3', 'ankir')
+
   print(repeated_word("Once upon a time "))
   print(repeated_word("Once upon a time a"))
 
