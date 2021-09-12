@@ -14,6 +14,17 @@ class Queue():
             self.rear.next=node
             self.rear=node
             return self.rear.value
+    def dequeue(self):
+        try:
+            if self.front == None:
+              raise Exception
+            temp=self.front
+            self.front=self.front.next
+            return temp.value
+        except Exception:
+            return 'error'
+    def isEmpty(self):
+        return self.front==None
 ###############
 class Vertex:
     def __init__(self, value):
