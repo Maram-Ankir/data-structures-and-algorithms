@@ -1,6 +1,6 @@
 from graph_business_trip import __version__
 
-from graph_business_trip import business_trip , Graph
+from graph_business_trip import Graph ,Vertex
 
 def test_version():
     assert __version__ == '0.1.0'
